@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Dec  3 02:47:43 2018
+# Process ID: 6212
+# Current directory: D:/mipsgi/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6844 D:\mipsgi\project_2\project_2.xpr
+# Log file: D:/mipsgi/project_2/vivado.log
+# Journal file: D:/mipsgi/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/mipsgi/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source tb_mips.tcl
+relaunch_sim
+restart
+run 100 us
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/mipsgi/project_2/tb_mips_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/mipsgi/project_2/tb_mips_behav.wcfg
+set_property xsim.view {{D:/Giovani/Giovani - UERGS/UERGS 2018/UERGS 2018.2/Organização de Computadores/MIPS GIOVANI E LARISSA/VFinal/tb_mips_behav.wcfg} D:/mipsgi/project_2/tb_mips_behav.wcfg} [get_filesets sim_1]
+relaunch_sim
+relaunch_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+relaunch_sim
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+open_wave_config {D:/mipsgi/project_2/tb_mips_behav.wcfg}
+relaunch_sim
+save_wave_config {D:/mipsgi/project_2/tb_mips_behav.wcfg}
+relaunch_sim
+save_wave_config {D:/mipsgi/project_2/tb_mips_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/mipsgi/project_2/tb_mips_behav.wcfg}
+close_sim

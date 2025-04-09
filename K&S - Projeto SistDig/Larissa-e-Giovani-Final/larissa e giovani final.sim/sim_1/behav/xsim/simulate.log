@@ -1,0 +1,79 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+[[ RAM ]]Reading File : program.hex
+[[ RAM ]]  0 0000
+[[ RAM ]]  1 0000
+[[ TBT ]] Asking memory to load data
+[[ TBT ]] Waiting memory loading process
+[[ RAM ]]  2 0000
+[[ RAM ]]  3 814F
+[[ RAM ]]  4 826E
+[[ RAM ]]  5 9106
+[[ RAM ]]  6 A21B
+[[ RAM ]]  7 030A
+[[ RAM ]]  8 010B
+[[ RAM ]]  9 0201
+[[ RAM ]] 10 0000
+[[ RAM ]] 11 A11B
+[[ RAM ]] 12 A21B
+[[ RAM ]] 13 A300
+[[ RAM ]] 14 A000
+[[ RAM ]] 15 0000
+[[ RAM ]] 16 0000
+[[ RAM ]] 17 0000
+[[ RAM ]] 18 FFFF
+[[ RAM ]] 19 FFFF
+[[ RAM ]] 20 0000
+[[ RAM ]] 21 0001
+[[ RAM ]] 22 0002
+[[ RAM ]] 23 000F
+[[ RAM ]] 24 FFEF
+[[ RAM ]] 25 0000
+[[ RAM ]] 26 0000
+[[ RAM ]] 27 0000
+[[ RAM ]] 28 0000
+[[ RAM ]] 29 0000
+[[ RAM ]] 30 0000
+[[ RAM ]] 31 0000
+[[ RAM ]]File Loaded - releasing memory
+[[ TBT ]] Memory load is finished, releasing Reset in next cycle
+[[ TBT ]] Reset is de-asserted. K and S processor must start now
+[[ TBT ]] Testbench is waiting HALT signal
+[[ TBT ]] K and S is HALTED!!!
+[[ TBT ]] Asking memory to dump data
+[[ TBT ]] Waiting memory dumping process
+
+
+[[ RAM ]]Dumping RAM to File : ram.hex
+[[ RAM ]]  0 0000
+[[ RAM ]]  1 0000
+[[ RAM ]]  2 0000
+[[ RAM ]]  3 814F
+[[ RAM ]]  4 826E
+[[ RAM ]]  5 9106
+[[ RAM ]]  6 A21B
+[[ RAM ]]  7 030A
+[[ RAM ]]  8 010B
+[[ RAM ]]  9 0201
+[[ RAM ]] 10 0000
+[[ RAM ]] 11 A11B
+[[ RAM ]] 12 A21B
+[[ RAM ]] 13 A300
+[[ RAM ]] 14 XXXX
+[[ RAM ]] 15 0000
+[[ RAM ]] 16 0000
+[[ RAM ]] 17 0000
+[[ RAM ]] 18 FFFF
+[[ RAM ]] 19 FFFF
+[[ RAM ]] 20 0000
+[[ RAM ]] 21 0001
+[[ RAM ]] 22 0002
+[[ RAM ]] 23 000F
+[[ RAM ]] 24 FFEF
+[[ RAM ]] 25 0000
+[[ RAM ]] 26 0000
+[[ RAM ]] 27 0000
+[[ RAM ]] 28 0000
+[[ RAM ]] 29 0000
+[[ RAM ]] 30 0000
+[[ RAM ]] 31 0000

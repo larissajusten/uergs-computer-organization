@@ -1,0 +1,549 @@
+
+*** Running vivado
+    with args -log MIPs.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPs.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source MIPs.tcl -notrace
+Command: synth_design -top MIPs -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2936 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 359.164 ; gain = 99.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPs' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/MIPs.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/control_unit.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (1#1) [D:/mipsgi/project_2/project_2.srcs/sources_1/new/control_unit.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'datapath' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/datapath.vhd:50]
+WARNING: [Synth 8-3848] Net x3 in module/entity datapath does not have driver. [D:/mipsgi/project_2/project_2.srcs/sources_1/new/datapath.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (2#1) [D:/mipsgi/project_2/project_2.srcs/sources_1/new/datapath.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'mem' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:37]
+WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:43]
+WARNING: [Synth 8-614] signal 'read' is read in the process but is not in the sensitivity list [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:43]
+WARNING: [Synth 8-614] signal 'write' is read in the process but is not in the sensitivity list [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:43]
+WARNING: [Synth 8-614] signal 'memoria' is read in the process but is not in the sensitivity list [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:43]
+WARNING: [Synth 8-614] signal 'end_mem' is read in the process but is not in the sensitivity list [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:43]
+WARNING: [Synth 8-614] signal 'in_mem' is read in the process but is not in the sensitivity list [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mem' (3#1) [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'MIPs' (4#1) [D:/mipsgi/project_2/project_2.srcs/sources_1/new/MIPs.vhd:34]
+WARNING: [Synth 8-3331] design mem has unconnected port clk
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[15]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[14]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[13]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[12]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[11]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[10]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[9]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[8]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[7]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[6]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[5]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[4]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[3]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[2]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[1]
+WARNING: [Synth 8-3331] design datapath has unconnected port x3[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 443.477 ; gain = 183.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 443.477 ; gain = 183.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 443.477 ; gain = 183.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'control_unit'
+INFO: [Synth 8-5544] ROM "reg_write" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ir_enable" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branch" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_write" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/mipsgi/project_2/project_2.srcs/sources_1/new/datapath.vhd:237]
+WARNING: [Synth 8-6014] Unused sequential element pc_reg was removed.  [D:/mipsgi/project_2/project_2.srcs/sources_1/new/datapath.vhd:94]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              busca_inst |                     000000000010 |                             0000
+              decodifica |                     000000000100 |                             0001
+                 executa |                     000000001000 |                             0010
+                salva_pc |                     000000010000 |                             0011
+                    load |                     000000100000 |                             0101
+                   store |                     000001000000 |                             0100
+                     ula |                     000010000000 |                             0110
+                  ula_op |                     010000000000 |                             0111
+                  ula_w8 |                     100000000000 |                             1000
+                    wmem |                     001000000000 |                             1001
+                    wreg |                     000100000000 |                             1010
+                  iSTATE |                     000000000001 |                             1101
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'control_unit'
+WARNING: [Synth 8-327] inferring latch for variable 'op_ULA_reg' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/control_unit.vhd:150]
+WARNING: [Synth 8-327] inferring latch for variable 'out_mem_reg' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:305]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[0]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[1]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[2]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[3]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[4]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[5]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[6]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[7]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[8]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[9]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[10]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[11]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[12]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[13]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[14]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[15]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[16]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[17]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[18]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[19]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[20]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[21]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[22]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[23]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[24]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[25]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[26]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[27]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[28]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[29]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[30]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[31]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[32]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[33]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[34]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[35]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[36]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[37]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[38]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[39]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[40]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[41]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[42]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[43]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[44]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[45]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[46]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[47]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[48]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[49]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[50]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[51]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[52]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[53]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[54]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[55]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[56]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[57]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[58]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[59]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[60]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[61]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[62]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[63]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[64]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[65]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[66]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[67]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[68]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[69]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[70]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[71]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[72]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[73]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[74]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[75]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[76]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[77]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[78]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[79]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[80]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[81]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[82]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[83]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[84]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[85]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[86]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[87]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[88]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[89]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[90]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[91]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[92]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[93]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[94]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[95]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[96]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memoria_reg[97]' [D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd:46]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 564.531 ; gain = 304.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 9     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 3     
+	  29 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 385   
+	  16 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 128   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module control_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  29 Input     12 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 9     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+Module mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 128   
+	   2 Input      1 Bit        Muxes := 382   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "O20" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "O2580" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element datapath/pc_reg was removed.  [D:/mipsgi/project_2/project_2.srcs/sources_1/new/datapath.vhd:94]
+WARNING: [Synth 8-3331] design mem has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (mem/out_mem_reg[11]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/out_mem_reg[3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[0][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[0][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[0][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[0][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[0][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[0][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[1][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[1][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[1][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[1][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[1][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[1][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[1][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[2][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[2][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[2][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[2][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[2][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[3][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[3][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[3][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[3][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[3][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[3][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[3][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[4][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[4][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[4][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[4][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[4][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[5][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[5][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[5][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[5][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[5][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[5][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[5][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[5][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[6][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[6][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[6][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[6][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[7][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[7][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[7][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[7][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[7][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[7][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[7][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[7][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[8][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[8][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[8][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[8][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[8][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[8][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[8][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[8][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[9][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[9][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[9][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[9][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[9][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[9][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[9][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[9][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[10][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[10][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[10][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[10][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[10][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[10][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[10][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[10][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[11][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[11][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[11][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[11][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[11][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[11][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[11][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[11][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[12][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[12][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[12][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[12][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[12][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[12][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[12][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[12][0]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[13][7]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[13][6]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[13][5]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[13][4]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[13][3]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[13][2]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[13][1]) is unused and will be removed from module MIPs.
+WARNING: [Synth 8-3332] Sequential element (mem/memoria_reg[13][0]) is unused and will be removed from module MIPs.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    17|
+|4     |LUT2   |     4|
+|5     |LUT3   |    30|
+|6     |LUT4   |    40|
+|7     |LUT5   |    46|
+|8     |LUT6   |    95|
+|9     |FDRE   |   184|
+|10    |FDSE   |     1|
+|11    |LD     |    16|
+|12    |LDP    |    16|
+|13    |IBUF   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-------------+------+
+|      |Instance       |Module       |Cells |
++------+---------------+-------------+------+
+|1     |top            |             |   460|
+|2     |  control_unit |control_unit |    49|
+|3     |  datapath     |datapath     |   362|
+|4     |  mem          |mem          |    46|
++------+---------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 751.730 ; gain = 491.898
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2320 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 751.730 ; gain = 491.898
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 751.730 ; gain = 491.898
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 16 instances
+  LDP => LDPE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 227 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 751.730 ; gain = 504.074
+INFO: [Common 17-1381] The checkpoint 'D:/mipsgi/project_2/project_2.runs/synth_1/MIPs.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MIPs_utilization_synth.rpt -pb MIPs_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 751.730 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  3 04:22:19 2018...

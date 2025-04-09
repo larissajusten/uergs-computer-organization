@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 11 14:01:58 2018
+# Process ID: 11924
+# Current directory: C:/MIPSOrg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2588 C:\MIPSOrg\MIPSOrg.xpr
+# Log file: C:/MIPSOrg/vivado.log
+# Journal file: C:/MIPSOrg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/MIPSOrg/MIPSOrg.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 792.984 ; gain = 113.215
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+[Sun Nov 11 21:56:48 2018] Launched synth_1...
+Run output will be captured here: C:/MIPSOrg/MIPSOrg.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 859.734 ; gain = 6.445
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sun Nov 11 22:16:07 2018] Launched synth_1...
+Run output will be captured here: C:/MIPSOrg/MIPSOrg.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 873.535 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sun Nov 11 22:19:35 2018] Launched synth_1...
+Run output will be captured here: C:/MIPSOrg/MIPSOrg.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 873.535 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 11 22:20:33 2018...

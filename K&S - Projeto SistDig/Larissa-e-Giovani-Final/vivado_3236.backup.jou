@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jul 12 12:37:10 2018
+# Process ID: 3236
+# Current directory: C:/KeS/Larissa-e-Giovani-Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14668 C:\KeS\Larissa-e-Giovani-Final\Larissa e Giovani Final.xpr
+# Log file: C:/KeS/Larissa-e-Giovani-Final/vivado.log
+# Journal file: C:/KeS/Larissa-e-Giovani-Final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.srcs/sim_1/imports/sim/k_and_s_simulation.wcfg}
+source tb_k_and_s.tcl
+run 200 ns
+close_sim

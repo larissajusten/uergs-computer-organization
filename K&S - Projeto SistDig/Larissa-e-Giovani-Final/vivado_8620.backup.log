@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Nov 10 18:30:45 2018
+# Process ID: 8620
+# Current directory: C:/KeS/Larissa-e-Giovani-Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8680 C:\KeS\Larissa-e-Giovani-Final\Larissa e Giovani Final.xpr
+# Log file: C:/KeS/Larissa-e-Giovani-Final/vivado.log
+# Journal file: C:/KeS/Larissa-e-Giovani-Final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 711.758 ; gain = 84.617
+update_compile_order -fileset sources_1

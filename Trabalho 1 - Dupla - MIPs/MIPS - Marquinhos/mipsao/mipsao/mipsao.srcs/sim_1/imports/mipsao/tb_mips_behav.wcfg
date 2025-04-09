@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_mips_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_mips" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="38580000fs"></ZoomStartTime>
+      <ZoomEndTime time="141426792fs"></ZoomEndTime>
+      <Cursor1Time time="83032000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb_mips/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/mem_addr" type="array">
+      <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/datapath_i/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/datapath_i/pc" type="array">
+      <obj_property name="ElementShortName">pc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/datapath_i/reg_inst" type="array">
+      <obj_property name="ElementShortName">reg_inst[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_inst[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/control_unit_i/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/control_unit_i/op_code" type="array">
+      <obj_property name="ElementShortName">op_code[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op_code[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group370" type="group">
+      <obj_property name="label">Reg Bank</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_mips/top/datapath_i/r0" type="array">
+         <obj_property name="ElementShortName">r0[15:0]</obj_property>
+         <obj_property name="ObjectShortName">r0[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/top/datapath_i/r1" type="array">
+         <obj_property name="ElementShortName">r1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">r1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/top/datapath_i/r2" type="array">
+         <obj_property name="ElementShortName">r2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">r2[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/top/datapath_i/r3" type="array">
+         <obj_property name="ElementShortName">r3[15:0]</obj_property>
+         <obj_property name="ObjectShortName">r3[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/datapath_i/f_zero" type="logic">
+      <obj_property name="ElementShortName">f_zero</obj_property>
+      <obj_property name="ObjectShortName">f_zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/datapath_i/f_neg" type="logic">
+      <obj_property name="ElementShortName">f_neg</obj_property>
+      <obj_property name="ObjectShortName">f_neg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/datapath_i/ula_out" type="array">
+      <obj_property name="ElementShortName">ula_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ula_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/top/datapath_i/reg_ula_out" type="array">
+      <obj_property name="ElementShortName">reg_ula_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_ula_out[15:0]</obj_property>
+   </wvobject>
+</wave_config>

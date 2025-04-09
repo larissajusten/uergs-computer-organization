@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sim_1/imports/sim/ram_model.vhd,1527697282,vhdl,C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sim_1/imports/sim/tb_k_and_s.vhd,,,ram_model,,,,,,,,
+C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sim_1/imports/sim/tb_k_and_s.vhd,1531312788,vhdl,,,,tb_k_and_s,,,,,,,,
+C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sources_1/imports/src/control_unit.vhd,1531370997,vhdl,,,,control_unit,,,,,,,,
+C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sources_1/imports/src/data_path.vhd,1531319932,vhdl,,,,data_path,,,,,,,,
+C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sources_1/imports/src/k_and_s.vhd,1527697282,vhdl,C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sim_1/imports/sim/tb_k_and_s.vhd,,,k_and_s,,,,,,,,
+C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sources_1/imports/src/k_and_s_pkg.vhd,1527697282,vhdl,C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sources_1/imports/src/control_unit.vhd;C:/KeS/Larissa-e-Giovani-Final/larissa e giovani final.srcs/sources_1/imports/src/data_path.vhd,,,k_and_s_pkg,,,,,,,,

@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+G:/Meu Drive/mips/mips/MIPSOrg.srcs/sim_1/new/mips_simulation.vhd,1541995507,vhdl,,,,tb_mips,,,,,,,,
+G:/Meu Drive/mips/mips/MIPSOrg.srcs/sources_1/new/MIPs.vhd,1541994266,vhdl,G:/Meu Drive/mips/mips/MIPSOrg.srcs/sim_1/new/mips_simulation.vhd,,,mips,,,,,,,,
+G:/Meu Drive/mips/mips/MIPSOrg.srcs/sources_1/new/control_unit.vhd,1542026532,vhdl,G:/Meu Drive/mips/mips/MIPSOrg.srcs/sources_1/new/MIPs.vhd,,,control_unit,,,,,,,,
+G:/Meu Drive/mips/mips/MIPSOrg.srcs/sources_1/new/datapath.vhd,1542026508,vhdl,G:/Meu Drive/mips/mips/MIPSOrg.srcs/sources_1/new/MIPs.vhd,,,datapath,,,,,,,,
+G:/Meu Drive/mips/mips/MIPSOrg.srcs/sources_1/new/mem.vhd,1542028559,vhdl,G:/Meu Drive/mips/mips/MIPSOrg.srcs/sources_1/new/MIPs.vhd,,,mem,,,,,,,,

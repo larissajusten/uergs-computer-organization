@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Marcos/Aula/Org/mipsao/mipsao.srcs/sim_1/new/tb_mips.vhd,1541874589,vhdl,,,,tb_mips,,,,,,,,
+C:/Marcos/Aula/Org/mipsao/mipsao.srcs/sources_1/new/control_unit.vhd,1541884130,vhdl,C:/Marcos/Aula/Org/mipsao/mipsao.srcs/sources_1/new/top_mips.vhd,,,control_unit,,,,,,,,
+C:/Marcos/Aula/Org/mipsao/mipsao.srcs/sources_1/new/datapath.vhd,1541878738,vhdl,C:/Marcos/Aula/Org/mipsao/mipsao.srcs/sources_1/new/top_mips.vhd,,,datapath,,,,,,,,
+C:/Marcos/Aula/Org/mipsao/mipsao.srcs/sources_1/new/memoria.vhd,1541885071,vhdl,C:/Marcos/Aula/Org/mipsao/mipsao.srcs/sources_1/new/top_mips.vhd,,,memoria,,,,,,,,
+C:/Marcos/Aula/Org/mipsao/mipsao.srcs/sources_1/new/top_mips.vhd,1541874602,vhdl,C:/Marcos/Aula/Org/mipsao/mipsao.srcs/sim_1/new/tb_mips.vhd,,,top_mips,,,,,,,,

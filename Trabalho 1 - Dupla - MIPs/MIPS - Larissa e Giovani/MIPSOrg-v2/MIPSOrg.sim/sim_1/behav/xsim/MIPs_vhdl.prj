@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MIPSOrg.srcs/sources_1/new/control_unit.vhd" \
+"../../../../MIPSOrg.srcs/sources_1/new/datapath.vhd" \
+"../../../../MIPSOrg.srcs/sources_1/new/MIPs.vhd" \
+
+# Do not sort compile order
+nosort

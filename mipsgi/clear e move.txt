@@ -1,0 +1,29 @@
+CLEAR REG
+
+RA = RB
+RC = RA - RB
+RC = 0
+Entradas
+ ULA = SUB
+ RA = RB = RR(Registrador da instrução)
+
+
+
+MOVE 
+
+RA = RB
+RC = RA OR RB
+RC = RA
+Entradas
+ULA = OR
+RA = RB(Registrador A da instrução)
+
+
+
+"0100 RA RB MMMM MMMM" --addi
+
+"0111 0000 0000 RA" --nott
+
+"1101 0000 0000 RCRA" --MOVE (OK)
+
+"1110 0000 0000 00RR" --CLEAR

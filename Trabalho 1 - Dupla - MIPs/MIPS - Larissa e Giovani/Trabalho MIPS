@@ -1,0 +1,60 @@
+|--------------------16 bits---------------------|
+|                                                |
+|                     Jump                       |
+|   OpCode   |     000    |          Mem         |
+|  (4 bits)  |  (4 bits)  |       (8 bits)       |
+|             0001 00000 MMMMMMMM                |
+|________________________________________________|
+|                                                |
+|          Desvio Condicional (branch)           | 
+|   OpCode  |    000    |       Mem              |
+| (4  bits) |  (4 bits) |     (8  bits)          |
+|             0010 0000 MMMMMMMM - bneg          |
+|             0011 0000 MMMMMMMM - beq           |
+|________________________________________________|
+|                                                |
+|                Acesso  à  memória              |
+|  OpCode   |    Reg    |   000    |    Mem      |
+| (4  bits) | (2  bits) | (2 bits) | (8  bits)   |
+|             0101 RR 00 MMMMMMMM - load         | Rc
+|             0110 RR 00 MMMMMMMM - store        | Ra
+|________________________________________________|
+|                                                |
+|                  Aritméticas                   | 
+|  OpCode |   000  |  Reg0   |  Reg1   |  Reg2   |
+|(4  bits)|(6 bits)|(2  bits)|(2  bits)|(2  bits)|
+|            1000 000000 RR RR RR - add rc ra rb | Rc = Ra + Rb  
+|            1001 000000 RR RR RR - sub rc ra rb | Rc = Ra - Rb
+|            1010 000000 RR RR RR - and rc ra rb | Rc = Ra and Rb 
+|            1011 000000 RR RR RR - or  rc ra rb | Rc = Ra or Rb 
+|________________________________________________|
+|                                                |
+|                  NOP / HALT                    | 
+|  OpCode   |              000                   |
+| (4  bits) |           (12 bits)                |
+|            0000 000000000000 - nop             |
+|            1111 000000000000 - halt            |
+|________________________________________________|
+
+OpCodes não usados:
+0000 - nop
+0001 - jump
+0010 - bneg
+0011 - beq
+0101 - load
+0110 - store
+1000 - add
+1001 - sub
+1010 - and
+1011 - or
+1111 - halt
+0100 
+0111
+1100
+1101
+1110
+
+Memoria: 256 posições <-> 2^8 (8 bits);
+		 (16  bits) instrução e dados;
+
+4 Registradores: 2 bits;

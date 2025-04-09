@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec  1 19:01:47 2018
+# Process ID: 6084
+# Current directory: C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/MIPSOrg - Final (12.11.2018)
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5800 C:\Users\laris\Dropbox\UERGS\Cadeiras\4º Semestre\Organização de  Computadores\Trabalho 1 - Dupla - MIPs\MIPSOrg - Final (12.11.2018)\MIPSOrg.xpr
+# Log file: C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/MIPSOrg - Final (12.11.2018)/vivado.log
+# Journal file: C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/MIPSOrg - Final (12.11.2018)\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  1 19:02:10 2018...

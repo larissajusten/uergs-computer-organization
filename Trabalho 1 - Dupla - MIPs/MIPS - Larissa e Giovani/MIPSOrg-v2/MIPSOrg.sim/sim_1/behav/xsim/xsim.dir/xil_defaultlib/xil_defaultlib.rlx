@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/MIPSOrg/MIPSOrg.srcs/sim_1/new/mips_simulation.vhd,1541986757,vhdl,,,,tb_mips,,,,,,,,
+C:/MIPSOrg/MIPSOrg.srcs/sources_1/new/MIPs.vhd,1541987067,vhdl,C:/MIPSOrg/MIPSOrg.srcs/sim_1/new/mips_simulation.vhd,,,mips,,,,,,,,
+C:/MIPSOrg/MIPSOrg.srcs/sources_1/new/control_unit.vhd,1541978020,vhdl,C:/MIPSOrg/MIPSOrg.srcs/sources_1/new/MIPs.vhd,,,control_unit,,,,,,,,
+C:/MIPSOrg/MIPSOrg.srcs/sources_1/new/datapath.vhd,1541985213,vhdl,C:/MIPSOrg/MIPSOrg.srcs/sources_1/new/MIPs.vhd,,,datapath,,,,,,,,
+C:/MIPSOrg/MIPSOrg.srcs/sources_1/new/mem.vhd,1541988440,vhdl,C:/MIPSOrg/MIPSOrg.srcs/sources_1/new/MIPs.vhd,,,mem,,,,,,,,

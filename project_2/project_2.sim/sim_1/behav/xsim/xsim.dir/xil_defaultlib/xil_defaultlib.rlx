@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/mipsgi/project_2/project_2.srcs/sim_1/new/mips_simulation.vhd,1543813914,vhdl,,,,tb_mips,,,,,,,,
+D:/mipsgi/project_2/project_2.srcs/sources_1/new/MIPs.vhd,1543818079,vhdl,D:/mipsgi/project_2/project_2.srcs/sim_1/new/mips_simulation.vhd,,,mips,,,,,,,,
+D:/mipsgi/project_2/project_2.srcs/sources_1/new/control_unit.vhd,1543819374,vhdl,D:/mipsgi/project_2/project_2.srcs/sources_1/new/MIPs.vhd,,,control_unit,,,,,,,,
+D:/mipsgi/project_2/project_2.srcs/sources_1/new/datapath.vhd,1543819288,vhdl,D:/mipsgi/project_2/project_2.srcs/sources_1/new/MIPs.vhd,,,datapath,,,,,,,,
+D:/mipsgi/project_2/project_2.srcs/sources_1/new/mem.vhd,1543819069,vhdl,D:/mipsgi/project_2/project_2.srcs/sources_1/new/MIPs.vhd,,,mem,,,,,,,,

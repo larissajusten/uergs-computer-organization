@@ -1,0 +1,146 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jul 12 12:37:10 2018
+# Process ID: 3236
+# Current directory: C:/KeS/Larissa-e-Giovani-Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14668 C:\KeS\Larissa-e-Giovani-Final\Larissa e Giovani Final.xpr
+# Log file: C:/KeS/Larissa-e-Giovani-Final/vivado.log
+# Journal file: C:/KeS/Larissa-e-Giovani-Final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 800.734 ; gain = 108.395
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_k_and_s' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.sim/sim_1/behav/xsim/program.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_k_and_s_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto c7d9d27803f2476db93c5ae80933a89a --incr --debug typical --relax --mt 2 -L work -L secureip --snapshot tb_k_and_s_behav work.tb_k_and_s -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_k_and_s_behav -key {Behavioral:sim_1:Functional:tb_k_and_s} -tclbatch {tb_k_and_s.tcl} -view {{C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.srcs/sim_1/imports/sim/k_and_s_simulation.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config {C:/KeS/Larissa-e-Giovani-Final/Larissa e Giovani Final.srcs/sim_1/imports/sim/k_and_s_simulation.wcfg}
+source tb_k_and_s.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[[ RAM ]]Reading File : program.hex
+[[ RAM ]]  0 0000
+[[ RAM ]]  1 0000
+[[ TBT ]] Asking memory to load data
+[[ TBT ]] Waiting memory loading process
+[[ RAM ]]  2 0000
+[[ RAM ]]  3 814F
+[[ RAM ]]  4 826E
+[[ RAM ]]  5 9106
+[[ RAM ]]  6 A21B
+[[ RAM ]]  7 030A
+[[ RAM ]]  8 010B
+[[ RAM ]]  9 0201
+[[ RAM ]] 10 0000
+[[ RAM ]] 11 A11B
+[[ RAM ]] 12 A21B
+[[ RAM ]] 13 A300
+[[ RAM ]] 14 A000
+[[ RAM ]] 15 0000
+[[ RAM ]] 16 0000
+[[ RAM ]] 17 0000
+[[ RAM ]] 18 FFFF
+[[ RAM ]] 19 FFFF
+[[ RAM ]] 20 0000
+[[ RAM ]] 21 0001
+[[ RAM ]] 22 0002
+[[ RAM ]] 23 000F
+[[ RAM ]] 24 FFEF
+[[ RAM ]] 25 0000
+[[ RAM ]] 26 0000
+[[ RAM ]] 27 0000
+[[ RAM ]] 28 0000
+[[ RAM ]] 29 0000
+[[ RAM ]] 30 0000
+[[ RAM ]] 31 0000
+[[ RAM ]]File Loaded - releasing memory
+[[ TBT ]] Memory load is finished, releasing Reset in next cycle
+[[ TBT ]] Reset is de-asserted. K and S processor must start now
+[[ TBT ]] Testbench is waiting HALT signal
+[[ TBT ]] K and S is HALTED!!!
+[[ TBT ]] Asking memory to dump data
+[[ TBT ]] Waiting memory dumping process
+
+
+[[ RAM ]]Dumping RAM to File : ram.hex
+[[ RAM ]]  0 0000
+[[ RAM ]]  1 0000
+[[ RAM ]]  2 0000
+[[ RAM ]]  3 814F
+[[ RAM ]]  4 826E
+[[ RAM ]]  5 9106
+[[ RAM ]]  6 A21B
+[[ RAM ]]  7 030A
+[[ RAM ]]  8 010B
+[[ RAM ]]  9 0201
+[[ RAM ]] 10 0000
+[[ RAM ]] 11 A11B
+[[ RAM ]] 12 A21B
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_k_and_s_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 813.789 ; gain = 2.301
+run 200 ns
+[[ RAM ]] 13 A300
+[[ RAM ]] 14 XXXX
+[[ RAM ]] 15 0000
+[[ RAM ]] 16 0000
+[[ RAM ]] 17 0000
+[[ RAM ]] 18 FFFF
+[[ RAM ]] 19 FFFF
+[[ RAM ]] 20 0000
+[[ RAM ]] 21 0001
+[[ RAM ]] 22 0002
+[[ RAM ]] 23 000F
+[[ RAM ]] 24 FFEF
+[[ RAM ]] 25 0000
+[[ RAM ]] 26 0000
+[[ RAM ]] 27 0000
+[[ RAM ]] 28 0000
+[[ RAM ]] 29 0000
+[[ RAM ]] 30 0000
+[[ RAM ]] 31 0000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 838.949 ; gain = 1.875
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 12 12:53:50 2018...

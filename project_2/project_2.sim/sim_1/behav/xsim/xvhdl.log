@@ -1,0 +1,11 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/testetraborg/project_2/project_2.srcs/sources_1/new/control_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/testetraborg/project_2/project_2.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity datapath
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/testetraborg/project_2/project_2.srcs/sources_1/new/mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/testetraborg/project_2/project_2.srcs/sources_1/new/MIPs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPs
+ERROR: [VRFC 10-2666] formal port sel_x1 has no actual or default value [D:/testetraborg/project_2/project_2.srcs/sources_1/new/MIPs.vhd:72]
+ERROR: [VRFC 10-1504] unit rtl ignored due to previous errors [D:/testetraborg/project_2/project_2.srcs/sources_1/new/MIPs.vhd:34]
+INFO: [VRFC 10-240] VHDL file D:/testetraborg/project_2/project_2.srcs/sources_1/new/MIPs.vhd ignored due to errors

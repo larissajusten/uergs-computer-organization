@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Nov 10 21:14:58 2018
+# Process ID: 12888
+# Current directory: C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/Marquinhos/mipsao/mipsao
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11644 C:\Users\laris\Dropbox\UERGS\Cadeiras\4º Semestre\Organização de  Computadores\Trabalho 1 - Dupla - MIPs\Marquinhos\mipsao\mipsao\mipsao.xpr
+# Log file: C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/Marquinhos/mipsao/mipsao/vivado.log
+# Journal file: C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/Marquinhos/mipsao/mipsao\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/Marquinhos/mipsao/mipsao/mipsao.xpr}
+update_compile_order -fileset sources_1

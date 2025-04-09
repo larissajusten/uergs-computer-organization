@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 11 22:54:22 2018
+# Process ID: 220
+# Current directory: C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/Marquinhos/mipsao/mipsao/mipsao.runs/synth_1
+# Command line: vivado.exe -log top_mips.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_mips.tcl
+# Log file: C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/Marquinhos/mipsao/mipsao/mipsao.runs/synth_1/top_mips.vds
+# Journal file: C:/Users/laris/Dropbox/UERGS/Cadeiras/4º Semestre/Organização de  Computadores/Trabalho 1 - Dupla - MIPs/Marquinhos/mipsao/mipsao/mipsao.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_mips.tcl -notrace

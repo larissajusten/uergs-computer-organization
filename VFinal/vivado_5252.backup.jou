@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Nov 12 03:30:34 2018
+# Process ID: 5252
+# Current directory: D:/MIPSOrg-v2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21484 D:\MIPSOrg-v2\MIPSOrg.xpr
+# Log file: D:/MIPSOrg-v2/vivado.log
+# Journal file: D:/MIPSOrg-v2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/MIPSOrg-v2/MIPSOrg.xpr
+launch_simulation
+open_wave_config D:/MIPSOrg-v2/tb_mips_behav.wcfg
+source tb_mips.tcl
+update_compile_order -fileset sources_1
+close_sim

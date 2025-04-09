@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl work  \
+"../../../../larissa e giovani final.srcs/sources_1/imports/src/k_and_s_pkg.vhd" \
+"../../../../larissa e giovani final.srcs/sources_1/imports/src/control_unit.vhd" \
+"../../../../larissa e giovani final.srcs/sources_1/imports/src/data_path.vhd" \
+"../../../../larissa e giovani final.srcs/sources_1/imports/src/k_and_s.vhd" \
+"../../../../larissa e giovani final.srcs/sim_1/imports/sim/ram_model.vhd" \
+"../../../../larissa e giovani final.srcs/sim_1/imports/sim/tb_k_and_s.vhd" \
+
+# Do not sort compile order
+nosort
